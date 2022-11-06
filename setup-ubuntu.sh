@@ -12,8 +12,7 @@ snap install --classic code
 
 sh customize-desktop.sh
 
-sh install-docker.sh
-sh post-install-docker.sh
+sh docker-install.sh
+sh docker post-install.sh
 
 sh update.sh
-
