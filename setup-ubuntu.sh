@@ -10,7 +10,7 @@ apt install python3 python3-venv python3-pip -y
 apt install chromium-browser -y
 snap install --classic code
 
-sh customize-ubuntu.sh
+sh customize-desktop.sh
 
 sh install-docker.sh
 sh post-install-docker.sh
