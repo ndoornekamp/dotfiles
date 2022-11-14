@@ -1,2 +1,2 @@
 # Maintenance
-alias update='sh scripts/update.sh'
+alias update='sh ~/scripts/update.sh'
