@@ -19,7 +19,8 @@ Shortcut | Effect
 Shortcut | Effect
 ---|---
 `ctrl+d` | Select (next occurence of) word
-`ctrl+d` | Undo last select/cursor position
+`ctrl+f2` | Select all occurences of word
+`ctrl+u` | Undo last select/cursor position
 `ctrl+l` | Select current line
 `ctrl+shift+k` | Delete current line
 `ctrl+right/left` | Move cursor one word right/left (can be used with `shift` as well to expand selection)
