@@ -1,6 +1,7 @@
 set -e
 
-sh update.sh
+apt update -y
+apt upgrade -y
 
 cp .bash_aliases ~/.bash_aliases
 
@@ -15,4 +16,5 @@ sh customize-desktop.sh
 sh docker-install.sh
 sh docker post-install.sh
 
-sh update.sh
+apt update -y
+apt upgrade -y

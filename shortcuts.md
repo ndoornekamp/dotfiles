@@ -1,5 +1,7 @@
 # Shortcuts
 
+Non-trivial shortcuts that seem useful to me
+
 ## Bash shortcuts
 
 Shortcut | Effect
