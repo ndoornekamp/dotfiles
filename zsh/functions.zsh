@@ -1,3 +1,4 @@
+# The four functions below do most of what a 'platform' like OhMyZsh does, but feels a lot less bloated
 function zsh_add_file() {
     [ -f "$DOTFILES/$1" ] && source "$DOTFILES/$1"
 }
@@ -11,6 +12,12 @@ function zsh_add_plugin() {
     else
         git clone "https://github.com/$1.git" "$DOTFILES/plugins/$PLUGIN_NAME"
     fi
+}
+
+function zsh_add_local_plugin() {
+    PLUGIN_NAME=$1
+    zsh_add_file "local-plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
+    zsh_add_file "local-plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
 }
 
 function zsh_add_completion() {
