@@ -1,9 +1,7 @@
+#!/bin/sh
 set -e
 
-apt update -y
-apt upgrade -y
-
-cp .bash_aliases ~/.bash_aliases
+apt update -y && apt upgrade -y
 
 apt install git -y
 apt install python3 python3-venv python3-pip -y
@@ -16,5 +14,6 @@ sh customize-desktop.sh
 sh docker-install.sh
 sh docker post-install.sh
 
-apt update -y
-apt upgrade -y
+sh setup-zsh.sh
+
+apt update -y && apt upgrade -y

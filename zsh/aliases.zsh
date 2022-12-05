@@ -1,3 +1,5 @@
 alias update='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y'
+
+# Colorize output
 alias ls='ls -AlhF --color=auto'
-alias update-bashrc='cp ~/scripts/.bash_aliases ~/.bash_aliases && source .bashrc'
+alias grep='grep --color=auto'

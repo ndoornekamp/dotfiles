@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Exports
+export DOTFILES=$HOME/dotfiles
+export HISTFILE=$HOME/.zsh_history  # By default, zsh doesn't save history
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+
+source "$DOTFILES/zsh/functions.zsh"
+source "$DOTFILES/zsh/aliases.zsh"
+source "$DOTFILES/zsh/prompt.zsh"
+
+# Plugins
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+
+# FZF: fuzzy finder
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
+[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $DOTFILES/completion/_fnm ] && fpath+="$DOTFILES/completion/"
+compinit
