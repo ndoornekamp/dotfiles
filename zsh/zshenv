@@ -1,0 +1,1 @@
+skip_global_compinit=1  # Disable so zsh-autocomplete can take care of autocompletions

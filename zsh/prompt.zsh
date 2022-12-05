@@ -34,7 +34,7 @@ zstyle ':vcs_info:git:*' formats "%{$fg[blue]%}(%{$fg[red]%}%m%u%c %{$fg[yellow]
 USER="%B%{$fg[green]%}%n@%{$fg[green]%}%m%{$reset_color%}"
 FOLDER="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})%{$fg[blue]%}%~%{$reset_color%}"
 VCS_INFO="\$vcs_info_msg_0_%{$reset_color%}"
-PROMPT="$USER:$FOLDER $VCS_INFO$ "
+PROMPT="$USER:$FOLDER$ "
 
 # Right prompt
-RPROMPT="%T"
+RPROMPT="$VCS_INFO"
