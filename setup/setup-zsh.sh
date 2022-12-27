@@ -1,5 +1,4 @@
 #!/bin/sh
-apt install zsh -y
 
 chsh -s $(which zsh) nick  # Make zsh default terminal
 
