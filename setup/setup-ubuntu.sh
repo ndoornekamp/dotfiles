@@ -18,6 +18,8 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < gnome/gnome-terminal-profiles
 sh setup/docker-install.sh
 sh setup/docker-post-install.sh
 
+sh setup/hadotlint-install.sh
+
 apt install zsh
 
 apt update -y && apt upgrade -y
