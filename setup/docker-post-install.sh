@@ -1,5 +1,13 @@
 #!/bin/sh
+set -e
 
-groupadd docker
-usermod -aG docker $USER
-newgrp docker
+if ! [ -x "$(command -v docker)" ]; then
+    echo "Running Docker post-install steps"
+    groupadd docker -f
+    usermod -aG docker $USERNAME
+    newgrp docker
+    exit
+else
+    echo "Docker is already available without root privileges"
+    exit
+fi
