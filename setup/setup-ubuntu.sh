@@ -22,4 +22,6 @@ sh setup/hadotlint-install.sh
 
 apt install zsh
 
+sh setup/install-miniconda.sh
+
 apt update -y && apt upgrade -y
