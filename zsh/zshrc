@@ -13,4 +13,8 @@ source "$DOTFILES/zsh/prompt.zsh"
 # Plugins
 zsh_add_plugin "marlonrichert/zsh-autocomplete"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "conda-incubator/conda-zsh-completion"
 zsh_add_local_plugin "git-prompt"
+
+fpath+="$DOTFILES/plugins/conda-zsh-completion"
+
