@@ -12,12 +12,11 @@ sudo snap install --classic code
 sh setup/customize-desktop.sh
 sh setup/customize-terminal.sh
 
-sudo apt install zsh
+sudo apt install zsh -y
 
-sh setup/hadolint-install.sh
-sh setup/miniconda-install.sh
+sudo sh setup/hadolint-install.sh
 
 sudo sh setup/docker-install.sh
 sh setup/docker-post-install.sh
 
-sudo apt update -y && sudo apt upgrade -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
