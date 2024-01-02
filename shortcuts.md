@@ -28,3 +28,4 @@ Shortcut | Effect
 `ctrl+right/left` | Move cursor one word right/left (can be used with `shift` as well to expand selection)
 `ctrl+shift+up/down` | Add cursor on line above/below
 `alt+up/down` | Move selected line(s) up/down
+`ctrl+shift+r` | Open refactor menu (extract variable/method)
