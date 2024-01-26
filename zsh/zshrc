@@ -5,6 +5,7 @@ export DOTFILES=$HOME/dotfiles
 export HISTFILE=$HOME/.zsh_history  # By default, zsh doesn't save history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 source "$DOTFILES/zsh/functions.zsh"
 source "$DOTFILES/zsh/aliases.zsh"
@@ -15,5 +16,6 @@ zsh_add_plugin "marlonrichert/zsh-autocomplete"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "conda-incubator/conda-zsh-completion"
 zsh_add_local_plugin "git-prompt"
+zsh_add_local_plugin "kubie"
 
 fpath+="$DOTFILES/plugins/conda-zsh-completion"
