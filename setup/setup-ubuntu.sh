@@ -6,6 +6,8 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install git -y
 sudo apt install python3 python3-venv python3-pip -y
 
+sudo sh setup/pyenv-install.sh
+
 sudo sh setup/chrome-install.sh
 sudo snap install --classic code
 
