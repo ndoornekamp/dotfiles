@@ -1,10 +1,10 @@
 #!/bin/sh
 set -e
 
-if ! [ -x "$(command -v docker)" ]; then
+if ! docker run hello-world > /dev/null 2>&1; then
     echo "Running Docker post-install steps"
     groupadd docker -f
-    usermod -aG docker $USERNAME
+    sudo usermod -aG docker $USERNAME
     newgrp docker
     exit
 else
