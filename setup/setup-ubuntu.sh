@@ -3,7 +3,7 @@ set -e
 
 sudo apt update -y && sudo apt upgrade -y
 
-sudo sh setup/pyenv-install.sh
+sudo sh setup/uv-install.sh
 
 sudo sh setup/chrome-install.sh
 sudo snap install --classic code
