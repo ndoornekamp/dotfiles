@@ -1,3 +1,5 @@
+local.zsh
+
 plugins/
 
 local-plugins/uv

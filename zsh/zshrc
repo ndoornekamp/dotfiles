@@ -8,9 +8,19 @@ export HISTSIZE=1000000
 export SAVEHIST=1000000
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
+export GPG_TTY=$(tty)
+unset DOCKER_HOST
+export BROWSER=wslview
+
+eval "$(direnv hook zsh)"
+
 source "$DOTFILES/zsh/functions.zsh"
 source "$DOTFILES/zsh/aliases.zsh"
 source "$DOTFILES/zsh/prompt.zsh"
+source "$DOTFILES/zsh/local.zsh"
 
 # Plugins
 zsh_add_plugin "marlonrichert/zsh-autocomplete"
