@@ -28,3 +28,5 @@ zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_local_plugin "git-prompt"
 zsh_add_local_plugin "kubie"
 zsh_add_local_plugin "uv"
+
+. "$HOME/.local/bin/env"
