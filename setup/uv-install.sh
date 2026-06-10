@@ -7,4 +7,6 @@ else
     echo "uv is already installed"
 fi
 
-mkdir ~/dotfiles/local-plugins/uv && uv generate-shell-completion zsh >> ~/dotfiles/local-plugins/uv/uv.zsh
+export PATH="$HOME/.local/bin:$PATH"
+
+mkdir -p "$HOME/dotfiles/local-plugins/uv" && "$HOME/.local/bin/uv" generate-shell-completion zsh >> "$HOME/dotfiles/local-plugins/uv/uv.zsh"
